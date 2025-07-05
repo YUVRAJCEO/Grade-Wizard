@@ -1,0 +1,101 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px;
+  transition: background 0.5s ease;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Input and Buttons */
+input,
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 10px 5px 20px 0;
+  outline: none;
+}
+
+input {
+  width: 200px;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+/* Student Cards Container */
+#students {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Student Card */
+.student {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 240px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.student:hover {
+  transform: scale(1.05);
+}
+
+.student strong {
+  color: #ffea00;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* Delete Button on Card */
+.student button {
+  background: linear-gradient(45deg, #ef5350, #e53935);
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.student button:hover {
+  background: linear-gradient(45deg, #e53935, #ef5350);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #eee;
+}
